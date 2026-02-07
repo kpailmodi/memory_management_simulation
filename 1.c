@@ -23,9 +23,6 @@ void replace(p *pa,int page_num,int vic_nu,int *fr,int d)
        if(debug){
        printf("\tpage %d replaced by page %d\n",vic_nu,page_num);
         printf("    ************************************\n");}
-
-
-           
            if(debug)
            {
 if(pa[vic_nu].dirty){
@@ -35,9 +32,6 @@ if(pa[vic_nu].dirty){
         printf("\tpage %d was not dirty\n",vic_nu);
         printf("    ************************************\n");}
 }
-
-               
-
   if(pa[vic_nu].dirty==1)
         dirty_counter++;
 
@@ -59,8 +53,6 @@ if(pa[vic_nu].dirty){
 
 
     }
-
-
 
 
     /////MAIN////
@@ -220,10 +212,6 @@ replace(pa,page_num,victim,fr,1);
             {
                 replace(pa,page_num,victim,fr,0);
             }
-
-
-
-
     }
 else if(l==1)
 {
